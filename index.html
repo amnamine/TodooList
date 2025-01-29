@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster Pro | Smart Task Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-check-double"></i> TaskMaster Pro</h1>
+            <p class="subtitle">Transform your productivity, one task at a time</p>
+        </header>
+
+        <div class="todo-input-section">
+            <form id="todo-form">
+                <div class="input-container">
+                    <input 
+                        type="text" 
+                        id="todo-input" 
+                        placeholder="What's on your mind today?" 
+                        autocomplete="off"
+                        required
+                    >
+                    <button type="submit" class="add-btn">
+                        <i class="fas fa-plus"></i>
+                        <span>Add Task</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-list-ul"></i> All Tasks
+            </button>
+            <button class="filter-btn" data-filter="active">
+                <i class="fas fa-clock"></i> Active
+            </button>
+            <button class="filter-btn" data-filter="completed">
+                <i class="fas fa-check-circle"></i> Completed
+            </button>
+        </div>
+
+        <div class="todo-list-container">
+            <ul id="todo-list"></ul>
+        </div>
+
+        <div class="todo-stats">
+            <span id="tasks-counter">0 tasks remaining</span>
+            <button id="clear-completed">
+                <i class="fas fa-trash-alt"></i>
+                <span>Clear Completed</span>
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Crafted with <i class="fas fa-heart"></i> by Your Name</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
